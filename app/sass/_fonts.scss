@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("OpenSans", "../fonts/OpenSans/Regular/OpenSans-Regular", normal);
+@include font-face("OpenSans", "../fonts/OpenSans/SemiBold/OpenSans-SemiBold", 600);
+@include font-face("OpenSans", "../fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.eot", 700);
+@include font-face("Gilroy", "../fonts/Gilroy/ExtraBold/Gilroy-ExtraBold", 700);

@@ -1,0 +1,377 @@
+@import './base';
+
+
+.page-wrapper {
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.srok {
+  font-family: Gilroy, serif;
+  font-size: 16px;
+  display: flex;
+  max-width: 470px;
+  align-items: center;
+  margin: 10px auto 0;
+  padding-bottom: 10px;
+  
+  &__title {
+    margin-right: 15px;
+  }
+
+  .timer-flipchart-inner {
+    font-family: Gilroy, serif;
+    font-weight: bold;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 98;
+  padding: 10px 0;
+  background-color: $blue;
+
+  &--scrolled {
+    background-color: $blue;      
+    border-bottom: 1px solid $accent;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: -0.3px;
+    margin-top: 8px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__grafik {
+    margin-right: 68px;
+  }
+
+  &__phone {
+    margin-right: 45px;
+  }
+}
+
+.footer {
+  background-color: #2d2d2d;
+
+  .logo {
+    margin-right: 87px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  &__address {
+    margin-right: 65px;
+  }
+
+  &__phone {
+    margin-right: 75px;
+  }
+
+  &__comand {
+    margin-left: 45px;
+    text-align: center;
+    span {
+      font-size: 10px;
+    }
+
+    a {
+      margin-top: 3px;
+      display: block;
+    }
+  } 
+  
+  &__politika {
+    font-size: 10px;
+    color: $blue;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+}
+
+.main-menu {    
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 100px 0 0;
+  }
+
+  li {
+    margin-right: 50px;
+    
+    &.last {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+
+    &.link {
+      &:hover, &.active {
+      }
+    }
+  }
+}
+
+.section {
+  padding: 40px 0 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &-title {
+    font-size: 36px;
+    font-family: Gilroy, serif;
+    font-weight: bold;
+    margin: 0 auto 40px;
+    text-align: center;
+
+    .inverse & {
+      color: #fff;
+    }
+  }
+}
+
+.s-main {
+  padding-top: 150px;
+  background-color: $blue;
+  // background-image: url('../img/main-back.png');
+  position: relative;
+  -webkit-clip-path: ellipse(76% 25% at 44% 12%);
+  clip-path: ellipse(76% 25% at 44% 12%);
+
+  .laptop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-family: Gilroy, serif;
+    margin: 0 0 28px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 22px;
+    text-align: center;
+    max-width: 769px;
+    margin: 0 auto 50px;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+    li {
+      list-style: none;
+      font-size: 18px;
+      font-weight: 600;
+      position: relative;
+      padding-left: 48px;
+      margin-right: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/checked-white.png");
+        width: 35px;
+        height: 35px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .form {
+    margin-bottom: 125px;
+  }
+}
+
+.s-account {
+  background-image: url("../img/quiz-back.png");
+  background-size: contain;
+  background-position: bottom center;
+
+  .account {
+    box-shadow: 0px 9px 11.76px 0.24px rgba(125, 125, 125, 0.7);
+    background-color: #fff;
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    min-height: 260px;
+    padding: 95px 25px 30px;
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    &__img {
+      position: absolute;
+      top: -65px;
+      left: -30px;
+    }
+
+    &__num {
+      font-family: Gilroy, serif;
+      font-size: 48px;
+      font-weight: 700;
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      color: #fff;
+    }
+
+    &__text {
+      font-size: 17px;
+      font-weight: 600;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__quiz {
+    font-size: 24px;
+    font-family: Gilroy, serif;
+    color: #fff;
+  }
+}
+
+.s-trust {
+  background-image: url("../img/sfera-back.jpg");
+  .carousel-marka {
+    max-width: 695px;
+    padding: 0 80px;
+    margin: 0 auto;
+  }
+}
+
+.s-reviews {
+
+  .carousel-reviews {
+    max-width: 890px;
+    padding: 0 70px;
+    margin: 0 auto;
+  }
+
+  .review {
+    max-width: 750px;
+    width: 100%;
+    min-height: 370px;
+    box-shadow: 0px 4px 11.76px 0.24px rgba(125, 125, 125, 0.7);
+    padding: 30px 45px 40px;
+    background-color: #fff;
+
+    &__img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid $accent;
+      margin: 0 auto 20px;
+      overflow: hidden;
+      img {
+      }
+    }
+
+    &__name {
+      font-size: 20px;
+      font-family: Gilroy, serif;
+      color: $accent;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    &__summary {
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+.s-sfera {
+  background-image: url("../img/sfera-back.jpg");
+
+  .sfera {
+    &__img {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 80px;
+    }
+    &__title {
+      font-size: 18px;
+      font-family: Gilroy, serif;
+      text-align: center;
+    }
+  }
+}
+
+.s-thanks {
+  padding: 200px 0 100px 0;
+  flex-grow: 1;
+    
+  &__title {
+    color: $accent;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 24px;
+    margin: 0 0 125px;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $accent;
+  }
+}
+
+
+@import './_media';
