@@ -160,6 +160,69 @@ $(document).ready(function () {
     }
   });
 
+
+  var $questionModal = $(".question-modal");
+$(".perehod").click(function(e) {
+  e.preventDefault();
+  var $this = $(this);
+
+  var $show = $questionModal.find("#" + $this.data("show"));
+  var $hide = $questionModal.find("#" + $this.data("hide"));
+
+  var $question = $this.closest(".question");
+  var variantSelected = false;
+  var drugoeSelected = false;
+
+  var $variants = $question.find('.checkbox [type=radio], .checkbox [type=checkbox]');
+  $variants.each(function() {
+    var $input = $(this);
+    if ($input.prop('checked')) {
+      // Если выбран другое, то пользователь обьязан указать свой вариант
+      if ($input.hasClass("drugoe")) {
+        drugoeSelected = true;
+        var vawVariant = $input.closest(".checkbox").siblings(".ukazat").val();
+        if (vawVariant && vawVariant.length > 0) {
+          variantSelected = true;
+        }
+      } else {
+        variantSelected = true;
+      }
+    }
+  });  
+
+  if ($variants.length > 0 && !variantSelected) {
+    var errorText = drugoeSelected ? "Укажите ваш вариант" : "Выберите один из вариантов";
+    $question.addClass("has-error");
+    $question.find(".question__error").html(errorText);
+    return;
+  }
+
+  $show.removeClass("d-none");
+  $hide.addClass("d-none");
+});
+
+/* Этот код используется если Quiz будет открываться в модальнос окне. При закрытия модального окна Quiz вернется в первоначальный вид. (То есть будет виден первый вопрос и уберется все ошибки)*/
+$(document).on('closing', '.question-modal', function (e) {
+  $questionModal.find('.question')
+  	.removeClass('has-error')
+    .addClass('d-none')
+    .filter('#question-1')
+    .removeClass('d-none');
+});
+
+  $(".carousel-account").owlCarousel({
+    loop: false,
+    dots: false,
+    nav: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false,},
+      576: { items: 1, mouseDrag: true, },
+    },
+  });
+
   $(".carousel-marka").owlCarousel({
     loop: true,
     dots: false,
@@ -175,14 +238,12 @@ $(document).ready(function () {
 
   $(".carousel-reviews").owlCarousel({
     loop: false,
-    dots: false,
-    nav: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false,},
-      480: { items: 1, mouseDrag: true, },
+      0: { items: 1, mouseDrag: false, dots: true, nav: false},
+      768: { items: 1, mouseDrag: true, nav: true, dots: false},
     },
   });
 

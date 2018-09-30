@@ -38,7 +38,6 @@
 
   &--scrolled {
     background-color: $blue;      
-    border-bottom: 1px solid $accent;
   }
 
   &__content {
@@ -113,6 +112,7 @@
     color: $blue;
     text-decoration: underline;
     margin-top: 10px;
+    cursor: pointer;
   }
 }
 
@@ -144,6 +144,10 @@
       }
     }
   }
+}
+
+.green {
+  color: #0eb038;
 }
 
 .section {
@@ -232,6 +236,10 @@
   background-size: contain;
   background-position: bottom center;
 
+  .carousel-account {
+    display: none;
+  }
+
   .account {
     box-shadow: 0px 9px 11.76px 0.24px rgba(125, 125, 125, 0.7);
     background-color: #fff;
@@ -268,11 +276,19 @@
     }
   }
 
-  &__quiz {
+}
+
+.s-quiz {
+  background-color: $blue;
+  padding: 30px 0;
+  &__title {
     font-size: 24px;
     font-family: Gilroy, serif;
     color: #fff;
-  }
+    &--min {
+      font-size: 18px;
+    }
+  }  
 }
 
 .s-trust {
@@ -298,6 +314,7 @@
     min-height: 370px;
     box-shadow: 0px 4px 11.76px 0.24px rgba(125, 125, 125, 0.7);
     padding: 30px 45px 40px;
+    margin: 10px;
     background-color: #fff;
 
     &__img {
@@ -351,25 +368,317 @@
   }
 }
 
-.s-thanks {
-  padding: 200px 0 100px 0;
-  flex-grow: 1;
+.s-offers {
+  padding-bottom: 60px;
+
+  .offer {
+    box-shadow: 0px 4px 11.76px 0.24px rgba(125, 125, 125, 0.7);
+    padding: 30px 25px 40px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    .ellips {
+      position: absolute;
+      top: -75px;
+      left: -30px;
+    }
+    &__title {
+      position: absolute;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: Gilroy, serif;
+      color: #fff;
+    }
     
-  &__title {
-    color: $accent;
-    font-size: 48px;
-    font-weight: normal;
-    margin-bottom: 30px;
+    table {
+      margin-top: 75px;
+      
+      th {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Gilroy, serif;
+        padding: 10px 0;
+      }
+      td.accent {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Gilroy, serif;
+      }
+      td {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+      }
+      td.tdmin {
+        font-size: 14px;
+      }
+    }
+
+    &__value {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-top: 5px;
+      &__title {
+        max-width: 288px;
+      }
+    }
+
+    &__document {
+      position: relative;
+      &__title {
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 21%;
+      }
+    }
   }
+
+}
+
+.s-compare {
+  background-image: url("../img/compare-back.jpg");
+
+  table {
+    max-width: 1070px;
+    margin: 0 auto;
+    tr {
+      border: 1px solid $blue;
+    }
+    .tr-border {
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+    }
+    th {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Gilroy, serif;
+      padding: 0 0 0 30px;
+    }
+    td {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 15px 0;
+    }
+    .td-bold {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Gilroy, serif;
+    }
+  }
+}
+
+.s-service {
+
+  .price {
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: Gilroy, serif;
+      border-bottom: 2px solid $accent;
+      div {
+        padding: 15px 25px;
+      }
+    }
+  }
+}
+
+.s-question {
+  background-image: url("../img/question-back.png");
 
   &__text {
     font-size: 24px;
-    margin: 0 0 125px;
+    font-family: Gilroy, serif;
+    max-width: 780px;
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+
+
+  .form {
+    max-width: 420px;
+    margin: 0 auto 10px;
+    background-color: transparent;
+    &__input {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__info {
+      margin-bottom: 20px;
+    }
+    .textarea {
+      display: block;
+      width: 100%;
+      border-top: 1px solid $blue;
+      border-bottom: 1px solid $blue !important;
+      height: 114px;
+      margin-bottom: 20px;
+    }
+    .button {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+.s-contact {
+  background-color: $blue;
+  .contact {
+    padding: 20px 0;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    &__phone {
+      margin-right: 130px;
+      &::before {
+        background-image: url("../img/call.png");
+      }
+    }
+    &__phone, &__address {
+      padding-left: 57px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;        
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &__address {
+      &::before {
+        background-image: url("../img/address.png");
+        top: 23px;
+      }
+    }
+  }
+}
+
+.s-thanks {
+  padding: 200px 0 100px 0;
+  flex-grow: 1;
+  background-color: $blue;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 69px;
+  }
+    
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Gilroy, serif;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      width: 163px;
+      height: 8px;
+      background-color: $accent;
+      position: absolute;
+      z-index: -1;
+      top: 29px;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    margin: 0 0 105px;
   }
 
   &__link {
+    font-size: 16px;
     text-decoration: underline;
-    color: $accent;
+  }
+}
+
+.politika {
+  max-width: 750px;
+  box-shadow: 0px 9px 20.58px 0.42px rgba(0, 0, 0, 0.35);
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Gilroy, serif;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 12px;
+    margin-bottom: 15px;
+    span {
+      color: $blue;
+    }
+  }
+}
+
+.question-modal {
+  max-width: 555px;
+  box-shadow: 0px 4px 11.76px 0.24px rgba(125, 125, 125, 0.7);
+  padding: 25px 25px 20px;
+  background-image: url("../img/quiz-back1.png");
+  
+  .question {
+
+    .label {
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    &__num {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Gilroy, serif;
+      margin-bottom: 15px;
+      span {
+        color: $blue;
+      }
+    }
+    &__text {
+      font-size: 17px;
+      font-weight: bold;
+      font-family: Gilroy, serif;
+      color: $blue;
+      margin-bottom: 15px;
+    }
+
+    .ukazat {
+      border: none;
+      border-bottom: 1px solid $blue;
+      padding: 0 15px 3px;
+      // background-color: transparent;
+      &::placeholder {
+        font-size: 12px;
+        font-style: italic;
+      }
+    }
+  }
+
+  .perehod {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Gilroy, serif;
+    color: #fff;
+    text-align: right;
+    display: block;
+    img {
+      margin-left: 5px;
+    }
   }
 }
 

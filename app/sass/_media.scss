@@ -68,6 +68,12 @@
     }
   }
 
+  .s-offers {
+    .offer {
+      margin-bottom: 25px;
+    }
+  }
+
   .s {
     
   }
@@ -112,13 +118,21 @@
   .section {
     &-title {
       font-size: 24px;
+      margin-bottom: 30px;
     }      
   }
 
-  .s {
-    &-main {
-      
-    } 
+  .s-reviews {
+    .carousel-reviews {
+      padding: 0;
+    }
+    .review {
+      margin: 10px 10px 20px;
+      padding: 20px 10px;
+      &__img {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 
@@ -128,9 +142,122 @@
     display: flex;
   }
 
+  .owl-carousel {
+    .owl {
+      &-prev {
+        background-image: url("../img/arrow-left-min.png") !important;
+      }
+      &-next {
+        background-image: url("../img/arrow-right-min.png") !important;
+      }
+    }
+  }
+
+  .s-account {
+    &__content {
+      display: none;
+    }
+    .carousel-account {
+      display: block;
+      padding: 0 30px;
+    }
+    .account {
+      padding: 70px 10px 15px;
+      min-height: 180px;
+      margin: 0 10px 20px;
+      &__img {
+        top: -90px;
+      }
+      &__num {
+        font-size: 36px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+    }
+  }
+
   .s-trust {
     .carousel-marka {
-      padding: 0 50px;
+      padding: 0 35px;
+    }
+  }
+
+  .s-offers {
+    .offer {
+      margin: 0 -15px 20px;
+      padding: 20px 5px;
+      .ellips {
+        top: -110px;
+        left: -60px;
+      }
+      &__title {
+        font-size: 18px;
+        margin-left: 15px;
+      }
+
+      table {
+        margin-top: 40px;
+        th {
+          font-size: 12px;
+          letter-spacing: -0.3px;
+        }
+        td {
+          font-size: 12px;
+        }
+        td.accent {
+          font-size: 12px;
+        }
+        td.tdmin {
+          font-size: 10px;
+        }
+      }
+
+      &__value {
+        flex-direction: column;
+        &__title {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .s-compare {
+
+    table {
+      // margin: 0 -15px;
+      th {
+        font-size: 14px;
+        padding: 0 0 0 5px;
+      }
+      td {
+        font-size: 12px;
+        padding: 8px 0;
+      }
+      .td-bold {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .s-question {
+    &__text {
+      font-size: 18px;
+    }
+
+    .form {
+      &__input {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .s-contact {
+    .contact {
+      flex-direction: column;
+      &__phone {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -146,6 +273,19 @@
         font-size: 16px;
         margin-bottom: 40px;
       }
+    }
+  }
+
+  .remodal {
+    padding: 20px 10px;
+  }
+
+  .politika {
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__text {
+      margin-bottom: 10px;
     }
   }
 }
