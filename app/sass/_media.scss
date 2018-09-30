@@ -74,6 +74,12 @@
     }
   }
 
+  .s-thanks {
+    &__img {
+      display: none;
+    }
+  }
+
   .s {
     
   }
@@ -265,11 +271,11 @@
     &-thanks {
       padding: 150px 0 50px;
       
-      &-title {
+      &__title {
         font-size: 30px;
       }
 
-      &-text {
+      &__text {
         font-size: 16px;
         margin-bottom: 40px;
       }
