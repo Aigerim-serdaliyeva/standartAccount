@@ -37,7 +37,7 @@
   background-color: $blue;
 
   &--scrolled {
-    background-color: $blue;      
+    border-bottom: 1px solid #fff;      
   }
 
   &__content {
@@ -150,6 +150,10 @@
   color: #0eb038;
 }
 
+.red {
+  color: red;
+}
+
 .section {
   padding: 40px 0 35px;
   background-size: cover;
@@ -172,10 +176,7 @@
 .s-main {
   padding-top: 150px;
   background-color: $blue;
-  // background-image: url('../img/main-back.png');
   position: relative;
-  -webkit-clip-path: ellipse(76% 25% at 44% 12%);
-  clip-path: ellipse(76% 25% at 44% 12%);
 
   .laptop {
     position: absolute;
@@ -227,14 +228,43 @@
   }
 
   .form {
+    background-color: #0559a5;
+    padding: 25px 90px 5px;
     margin-bottom: 125px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #0559a5;
+      right: 100%;
+      left: -1000px;
+      top: 0;
+      bottom: 0;
+    }
+
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/s-main__footer.png');
+    background-repeat: no-repeat;
   }
 }
 
 .s-account {
-  background-image: url("../img/quiz-back.png");
-  background-size: contain;
+  background-image: url("../img/s-accaunt__back.jpg");
   background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &__content {
+    margin-bottom: 100px;
+  }
 
   .carousel-account {
     display: none;
@@ -260,7 +290,7 @@
     &__num {
       font-family: Gilroy, serif;
       font-size: 48px;
-      font-weight: 700;
+      font-weight: 800;
       position: absolute;
       top: 10px;
       left: 40px;
@@ -271,7 +301,7 @@
       font-size: 17px;
       font-weight: 600;
       span {
-        font-weight: 700;
+        font-weight: 800;
       }
     }
   }
@@ -332,7 +362,7 @@
       font-size: 20px;
       font-family: Gilroy, serif;
       color: $accent;
-      font-weight: 700;
+      font-weight: 800;
       text-align: center;
       margin-bottom: 8px;
     }
@@ -374,9 +404,22 @@
   .offer {
     box-shadow: 0px 4px 11.76px 0.24px rgba(125, 125, 125, 0.7);
     padding: 30px 25px 40px;
-    background-color: #fff;
     position: relative;
     overflow: hidden;
+
+    &__select {
+      display: none;
+      
+      select {
+        font-size: 14px;
+        font-weight: 600;
+        border: 0;
+        border-bottom: 1px solid $accent;
+        outline: none;
+        color: $accent;
+      }
+    }
+
     .ellips {
       position: absolute;
       top: -75px;
@@ -443,6 +486,25 @@
 
 .s-compare {
   background-image: url("../img/compare-back.jpg");
+
+  &__select {
+    display: none;
+
+    select {
+      width: 165px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 0;
+      border-bottom: 1px solid $accent;
+      background-color: transparent;
+      outline: none;
+      color: $accent;
+    }
+  }
+
+  .itogo {
+    background-color: rgba($blue, 0.3);
+  }
 
   table {
     max-width: 1070px;
@@ -628,12 +690,25 @@
 
 .question-modal {
   max-width: 555px;
-  box-shadow: 0px 4px 11.76px 0.24px rgba(125, 125, 125, 0.7);
   padding: 25px 25px 20px;
-  background-image: url("../img/quiz-back1.png");
   
   .question {
+    position: relative;
+    z-index: 0;
 
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: -21px;
+      left: -25px;
+      right: -25px;
+      z-index: -1;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+    
     .label {
       margin-bottom: 15px;
       font-size: 15px;
@@ -665,6 +740,30 @@
       &::placeholder {
         font-size: 12px;
         font-style: italic;
+      }
+    }
+  }  
+
+  #question {
+    &-1:before {
+      background-image: url("../img/quiz-back1.png");
+    }
+
+    &-2:before {
+      background-image: url("../img/quiz-back2.png");
+    }
+
+    &-5 {
+      .label {
+        span {
+          width: 245px;
+        }
+      }
+
+      .button {
+        display: block;
+        max-width: 230px;
+        margin: 0 0 0 auto;
       }
     }
   }

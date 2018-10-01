@@ -3,9 +3,46 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1600px) {
+  .s-main {
+    .laptop {
+      right: -100px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .s-main {
+    .laptop {
+      right: -200px;
+    }
+  }
+}
+
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+	.s-main {
+    .laptop {
+      display: none;
+    }
+
+    .form {
+      margin-bottom: 0;
+      &:before {
+        display: none;
+      }
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .s-offers {
+    .offer {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 // ≥992px
@@ -45,6 +82,7 @@
     margin-left: 0;
     z-index: 98;
     padding: 10px 0;
+    border-bottom: 1px solid #fff;
 
 		ul {
 			display: block;
@@ -62,17 +100,24 @@
 		}
   }    
 
+  .s-main {
+    ul {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        max-width: 370px;
+        width: 100%;
+        margin: 0 0 15px;
+      }
+    }
+  }
+
   .s-sfera {
     .sfera {
       margin-bottom: 25px;
     }
-  }
-
-  .s-offers {
-    .offer {
-      margin-bottom: 25px;
-    }
-  }
+  }  
 
   .s-thanks {
     &__img {
@@ -128,6 +173,13 @@
     }      
   }
 
+  .s-quiz {
+    &__title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
   .s-reviews {
     .carousel-reviews {
       padding: 0;
@@ -137,6 +189,27 @@
       padding: 20px 10px;
       &__img {
         margin-bottom: 10px;
+      }
+    }
+  }
+
+  .s-offers {
+    .offer {
+      .accent {
+        display: none;
+      }
+
+      &__select {
+        display: table-cell;
+      }
+
+      tbody {
+        td {
+          display: none;
+          &.active {
+            display: table-cell;
+          }
+        }
       }
     }
   }
@@ -191,31 +264,27 @@
 
   .s-offers {
     .offer {
-      margin: 0 -15px 20px;
-      padding: 20px 5px;
+      padding: 20px 10px;
       .ellips {
         top: -110px;
         left: -60px;
       }
+
       &__title {
         font-size: 18px;
         margin-left: 15px;
       }
 
+      &__select {
+        select {
+          font-size: 13px;
+          letter-spacing: -0.5px;
+        }
+      }
+
       table {
-        margin-top: 40px;
         th {
-          font-size: 12px;
-          letter-spacing: -0.3px;
-        }
-        td {
-          font-size: 12px;
-        }
-        td.accent {
-          font-size: 12px;
-        }
-        td.tdmin {
-          font-size: 10px;
+          font-size: 13px;
         }
       }
 
@@ -230,18 +299,31 @@
 
   .s-compare {
 
-    table {
-      // margin: 0 -15px;
-      th {
-        font-size: 14px;
-        padding: 0 0 0 5px;
-      }
+    thead td {
+      display: none;
+    }
+
+    &__select {
+      display: table-cell !important;
+    }
+
+    tbody {
       td {
-        font-size: 12px;
-        padding: 8px 0;
+        display: none;
+        &.active {
+          display: table-cell;
+        }
       }
+    }
+
+    table {
+      th, td {
+        font-size: 14px;
+        padding: 5px 0 5px 5px;
+      }
+
       .td-bold {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }
@@ -322,4 +404,16 @@
 // ≤1200px
 @include media-breakpoint-up(xl) {
 	
+}
+
+@media (min-width: 1920px) {
+  .s-main {
+    &:after {
+      background-size: 100% 100%;
+    }
+  }
+
+  .s-account {
+    background-size: 100% auto;
+  }
 }

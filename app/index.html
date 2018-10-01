@@ -142,7 +142,7 @@
       <div class="container">
         <h2 class="section-title">Причины обратиться к "Стандарт_Account"</h2>
         <div class="row s-account__content">
-          <div class="col-lg-4 col-6">
+          <div class="col-lg-4 col-6 d-flex">
             <div class="account">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">1</div>
@@ -150,7 +150,7 @@
                 <span>от 100 000 тенге в месяц</span> за счет выполнения всех функций штатного бухгалтера</div>
             </div>
           </div>
-          <div class="col-lg-4 col-6">
+          <div class="col-lg-4 col-6 d-flex">
             <div class="account">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">2</div>
@@ -158,21 +158,21 @@
                 о которых вы даже не подозревали</div>
             </div>
           </div>
-          <div class="col-lg-4 col-6">
+          <div class="col-lg-4 col-6 d-flex">
             <div class="account">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">3</div>
               <div class="account__text">Мгновенно учитываем любые изменения и предусматриваем непрерывное <span>обучение сотрудников</span> (Вам <span>не придется платить от 40 000 тенге</span> в год за обучение своих сотрудников)</div>
             </div>
           </div>
-          <div class="col-lg-4 col-6">
+          <div class="col-lg-4 col-6 d-flex">
             <div class="account">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">4</div>
               <div class="account__text">Гарантируем <span>корректность и своевременность</span> в работе с бухгалтерскими и налоговыми отчетами, благодаря чему Вы сможете со спокойствием <span>уделять время другим важным делам</span></div>
             </div>
           </div>
-          <div class="col-lg-4 col-6">
+          <div class="col-lg-4 col-6 d-flex">
             <div class="account">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">5</div>
@@ -332,51 +332,61 @@
       <div class="container">
         <h2 class="section-title">Пакетные предложения "Стандарт_Account"</h2>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="offer">
               <div class="ellips"><img src="./img/ellips-offer.png" alt=""></div>
               <div class="offer__title">Для ИП</div>
               <table style="width:100%">
-                <tr>
-                  <th>Стоимость <br>
-                    пакета/период</th>
-                  <td class="accent"> 10 000тг <br>
-                    /полугодие</td>
-                  <td class="accent">от 18 000тг <br>
-                    /месяц</td>
-                  <td class="accent">от 28 000тг <br>
-                    /месяц</td>
-                </tr>
-
-                <tr>
-                  <th>Форма <br>
-                    налогообложения</th>
-                  <td class="tdmin">упрощенная*</td>
-                  <td class="tdmin">упрощенная*</td>
-                  <td class="tdmin">общая*</td>
-                </tr>
-
-                <tr>
-                  <th>Наличие <br>
-                    сотрудников</th>
-                  <td>-</td>
-                  <td>+</td>
-                  <td>+/-</td>
-                </tr>
-
-                <tr>
-                  <th>Ведение 1С</th>
-                  <td>-</td>
-                  <td>+</td>
-                  <td>+</td>
-                </tr>
-
-                <tr>
-                  <th>Наличие НДС</th>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>+</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Стоимость <br>
+                      пакета/период</th>
+                    <td class="accent"> 10 000тг <br>
+                      /полугодие</td>
+                    <td class="accent">от 18 000тг <br>
+                      /месяц</td>
+                    <td class="accent">от 28 000тг <br>
+                      /месяц</td>
+                    <td class="offer__select">
+                      <select>
+                        <option value="1">10 000тг / полугодие</option>
+                        <option value="2">от 18 000тг / месяц</option>
+                        <option value="3">от 28 000тг / месяц</option>
+                      </select>
+                    </td>
+                  </tr>  
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Форма <br>
+                      налогообложения</th>
+                    <td class="tdmin active">упрощенная*</td>
+                    <td class="tdmin">упрощенная*</td>
+                    <td class="tdmin">общая*</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Наличие <br>
+                      сотрудников</th>
+                    <td class="active">-</td>
+                    <td>+</td>
+                    <td>+/-</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Ведение 1С</th>
+                    <td class="active">-</td>
+                    <td>+</td>
+                    <td>+</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Наличие НДС</th>
+                    <td class="active">-</td>
+                    <td>-</td>
+                    <td>+</td>
+                  </tr>  
+                </tbody>
               </table>  
               <div class="offer__value">
                 <div class="offer__value__title">* Стоимость указана при минимальных оборотах.
@@ -393,51 +403,62 @@
               </div>                        
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="offer">
               <div class="ellips"><img src="./img/ellips-offer.png" alt=""></div>
               <div class="offer__title">Для ТОО</div>
               <table style="width:100%">
-                <tr>
-                  <th>Стоимость <br>
-                    пакета/период</th>
-                  <td class="accent"> 25 000тг <br>
-                    /полугодие</td>
-                  <td class="accent">от 28 000тг <br>
-                    /месяц</td>
-                  <td class="accent">от 30 000тг <br>
-                    /месяц</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Стоимость <br>
+                      пакета/период</th>
+                    <td class="accent"> 25 000тг <br>
+                      /полугодие</td>
+                    <td class="accent">от 28 000тг <br>
+                      /месяц</td>
+                    <td class="accent">от 30 000тг <br>
+                      /месяц</td>
+                    <td class="offer__select">
+                      <select>
+                        <option value="1">10 000тг / полугодие</option>
+                        <option value="2">от 18 000тг / месяц</option>
+                        <option value="3">от 28 000тг / месяц</option>
+                      </select>
+                    </td>
+                  </tr>
+                </thead>
 
-                <tr>
-                  <th>Форма <br>
-                    налогообложения</th>
-                  <td class="tdmin">упрощенная*</td>
-                  <td class="tdmin">упрощенная*</td>
-                  <td class="tdmin">общая*</td>
-                </tr>
-
-                <tr>
-                  <th>Наличие <br>
-                    сотрудников</th>
-                  <td>-</td>
-                  <td>+</td>
-                  <td>+/-</td>
-                </tr>
-
-                <tr>
-                  <th>Ведение 1С</th>
-                  <td>-</td>
-                  <td>+</td>
-                  <td>+</td>
-                </tr>
-
-                <tr>
-                  <th>Наличие НДС</th>
-                  <td>-</td>
-                  <td>+</td>
-                  <td>+</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th>Форма <br>
+                      налогообложения</th>
+                    <td class="tdmin active">упрощенная*</td>
+                    <td class="tdmin">упрощенная*</td>
+                    <td class="tdmin">общая*</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Наличие <br>
+                      сотрудников</th>
+                    <td class="active">-</td>
+                    <td>+</td>
+                    <td>+/-</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Ведение 1С</th>
+                    <td class="active">-</td>
+                    <td>+</td>
+                    <td>+</td>
+                  </tr>
+  
+                  <tr>
+                    <th>Наличие НДС</th>
+                    <td class="active">-</td>
+                    <td>+</td>
+                    <td>+</td>
+                  </tr>
+                </tbody>
               </table>  
               <div class="offer__value">
                 <div class="offer__value__title">* Стоимость указана при минимальных оборотах.
@@ -477,65 +498,75 @@
         <h2 class="section-title">Расходы на оплату труда штатного бухгалтера <br>
             в сравнении с услугами  "Стандарт_Account"  </h2>
             <table style="width:100%">
-              <tr>
-                <th>Расходы</th>
-                <td class="td-bold">Штатный бухгалтер</td>
-                <td class="accent td-bold">Услуги компании "Стандарт_Account"</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Расходы</th>
+                  <td class="td-bold">Штатный бухгалтер</td>
+                  <td class="accent td-bold">Услуги компании "Стандарт_Account"</td>
+                  <td class="s-compare__select">
+                    <select>
+                      <option value="1">Штатный бухгалтер</option>
+                      <option value="2">Услуги компании "Стандарт_Account"</option>
+                    </select>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Аренда дополнительного помещения</th>
+                  <td class="active">от 20 000 тенге/месяц</td>
+                  <td>0 тг.</td>
+                </tr>
+  
+                <tr>
+                  <th>Канцелярские товары</th>
+                  <td class="active">от 3 000 тенге/месяц</td>
+                  <td>0 тг.</td>
+                </tr>
+  
+                <tr>
+                  <th>Услуги связи</th>
+                  <td class="active">от 3 000 тенге/месяц</td>
+                  <td>0 тг.</td>
+                </tr>
+  
+                <tr>
+                  <th>З/п бухгалтера</th>
+                  <td class="active">от 150 000 тенге/месяц</td>
+                  <td>0 тг.</td>
+                </tr>
+  
+                <tr>
+                  <th>Оплата за выполненный объем работы</th>
+                  <td class="active">от 0 тг./месяц</td>
+                  <td>от 10 000 тг./полугодие</td>
+                </tr>
+  
+                <tr class="itogo">
+                  <th>Итого</th>
+                  <td class="td-bold red active">от 176 000 тенге в месяц</td>
+                  <td class="td-bold green">от 10 000 тенге в месяц</td>
+                </tr>
+  
+                <tr class="tr-border">
+                  <th></th>
+                  <td class="active">+</td>
+                  <td>+</td>
+                </tr>
+  
+                <tr>
+                  <th>Обучение</th>
+                  <td class="active">от 40 000 тенге/ежегодно</td>
+                  <td>0 тг.</td>
+                </tr>
+  
+                <tr>
+                  <th>Покупка оборудования</th>
+                  <td class="active">от 150 000 тенге/раз в 5 лет</td>
+                  <td>0 тг.</td>
+                </tr>  
+              </tbody>
 
-              <tr>
-                <th>Аренда дополнительного помещения</th>
-                <td>от 20 000 тенге/месяц</td>
-                <td>0 тг.</td>
-              </tr>
-
-              <tr>
-                <th>Канцелярские товары</th>
-                <td>от 3 000 тенге/месяц</td>
-                <td>0 тг.</td>
-              </tr>
-
-              <tr>
-                <th>Услуги связи</th>
-                <td>от 3 000 тенге/месяц</td>
-                <td>0 тг.</td>
-              </tr>
-
-              <tr>
-                <th>З/п бухгалтера</th>
-                <td>от 150 000 тенге/месяц</td>
-                <td>0 тг.</td>
-              </tr>
-
-              <tr>
-                <th>Оплата за выполненный объем работы</th>
-                <td>от 0 тг./месяц</td>
-                <td>от 10 000 тг./полугодие</td>
-              </tr>
-
-              <tr>
-                <th>Итого</th>
-                <td class="td-bold">от 176 000 тенге в месяц</td>
-                <td class="td-bold green">от 10 000 тенге в месяц</td>
-              </tr>
-
-              <tr class="tr-border">
-                <th></th>
-                <td>+</td>
-                <td>+</td>
-              </tr>
-
-              <tr>
-                <th>Обучение</th>
-                <td>от 40 000 тенге/ежегодно</td>
-                <td>0 тг.</td>
-              </tr>
-
-              <tr>
-                <th>Покупка оборудования</th>
-                <td>от 150 000 тенге/раз в 5 лет</td>
-                <td>0 тг.</td>
-              </tr>
             </table> 
       </div>
     </section>
@@ -608,61 +639,6 @@
       </div>
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae9b48baebad09f764ead52a4395d89317a99bea5f2822c3f6366a4dce7901517&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
     </section>
-
-    <!-- <section class="section s-test">
-      <div class="container">
-
-          <div class="form form--vertical wow slideInLeft">
-              <form action="/mail.php" method="post">
-                <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
-                <div class="form__content">
-                  <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
-    
-                  <div class="input-div">
-                    <input type="text" class="input" name="name" placeholder="Имя">
-                  </div>
-    
-                  <div class="input-div">
-                    <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
-                    <span class="error-message">Заполните это поле</span>
-                  </div>
-    
-                  <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
-    
-                  <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
-                </div>
-              </form>
-            </div>
-
-        <div class="form form--horizontal wow slideInUp">
-          <form action="/mail.php" method="post">
-            <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
-            <div class="form__content">
-
-              <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
-
-              <div class="input-div">
-                <input type="text" class="input" name="name" placeholder="Имя">
-              </div>
-
-              <div class="input-div">
-                <input type="email" class="input" name="email" placeholder="E-mail *" required="">
-                <span class="error-message">Заполните это поле</span>
-              </div>
-
-              <div class="input-div">
-                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
-                <span class="error-message">Заполните это поле</span>
-              </div>
-
-              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
-            </div>
-            <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
-          </form>
-        </div>
-
-      </div>
-    </section> -->
 
     <footer class="footer inverse">
       <div class="container">
@@ -754,7 +730,7 @@
     <form action="/mail.php" method="post">
       <input type="hidden" name="info" value="Quiz">
   
-      <div class="question question-1" id="question-1">
+      <div class="question" id="question-1">
         <div class="question__num">Вопрос <span>1</span> из 5</div>
         <div class="question__text">Какая у Вас форма предпринимательской деятельности?</div>
         <div class="question__variants">
@@ -813,7 +789,7 @@
         </label>
         
         <div class="question__error"></div>
-        <a href="#" class="perehod" data-show="question-last" data-hide="question-2">Дальше</a>
+        <a href="#" class="perehod" data-show="question-3" data-hide="question-2">Дальше</a>
       </div>      
 
       <div class="question d-none" id="question-3">
@@ -859,7 +835,7 @@
         <div class="question__num">Вопрос <span>4</span> из 5</div>
         <div class="question__text">Есть ли необходимость вести 1С?</div>
         <label class="label">
-          <span class="checkbox">
+          <span class="checkbox checkbox--circle">
             <input type="radio" name="Ответ4" value="Да">
             <span></span>          
           </span>
@@ -867,7 +843,7 @@
         </label>
 
         <label class="label">
-          <span class="checkbox">
+          <span class="checkbox checkbox--circle">
             <input type="radio" name="Ответ4" value="Нет">
             <span></span>          
           </span>
@@ -882,30 +858,32 @@
         <div class="question__num">Вопрос <span>5</span> из 5</div>
         <div class="question__text">Введите числовые значения</div>
         <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ5" value="">
-            <span></span>          
-          </span>
-          <span></span>
+          <span>Количество операций в месяц</span>
+          <input type="number" class="input-number" name="Количество_операций" value="" required>
         </label>
 
         <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ5" value="">
-            <span></span>          
-          </span>
-          <span></span>
+          <span>Количество сотрудников</span>
+          <input type="number" class="input-number" name="Количество_сотрудников" value="" required>
         </label>
 
         <div class="question__error"></div>
-        <a href="#" class="perehod" data-show="question-last" data-hide="question-5">Дальше</a>
+        <a href="#" class="button button-perehod" data-show="question-last" data-hide="question-5">Рассчитать стоимость</a>
       </div> 
   
       <div class="question d-none" id="question-last">
-        <input type="hidden" name="info" value="Обратный звонок">
-        <input type="text" class="input" name="name" placeholder="Введите имя">
-        <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
-        <button type="submit">Узнать результаты теста</button>
+        <div class="form form--vertical">
+          <div class="form__content">
+            <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните поле</span>
+            </div>
+            <button type="submit" class="button ajax-submit">Рассчитать стоимость</button>                  
+          </div>
+        </div>
       </div>
   
     </form>    

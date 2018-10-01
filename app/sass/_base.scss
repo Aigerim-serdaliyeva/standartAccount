@@ -241,15 +241,11 @@ h1, h2, h3, h4, h5, h6 {
   color: $text_color;
   font-size: 14px;
   line-height: inherit;
-  border-bottom: 1px solid #fff !important;
+  border-bottom: 1px solid $blue !important;
   border: 1px solid transparent;
   background-color: transparent;
   font-family: $default_family, sans-serif;
   padding: 11px 15px 11px 15px;   
-
-  &--blue {
-    border-bottom: 1px solid $blue !important;
-  }
 
   &.error {
     border-color: red;
@@ -285,6 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .inverse & {
     color: #fff;
+    border-bottom-color: #fff !important;
 
     &::-webkit-input-placeholder {
       color: #fff;
@@ -314,7 +311,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .form {
   position: relative;  
-  background-color: #0559a5;
     
   &__title {
     font-size: 20px;
@@ -333,21 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &--horizontal {
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: #0559a5;
-      right: 100%;
-      left: -1000px;
-      top: 0;
-      bottom: 0;
-    }
-    form {
-      padding: 25px 90px 5px;
-    }
-    .form {
-      
+    .form {      
       &__content, &__info {
         max-width: 655px;
       }
@@ -506,14 +488,33 @@ h1, h2, h3, h4, h5, h6 {
 
     & + span {
       display: none;
-      // width: 100%;
-      // height: 100%;
-      // background-color: #000;
+      width: 21px;
+      height: 20px;
       background-image: url("../img/checked.png");
+      transform: translate(-2px, -10px);
     }
 
     &:checked + span {
       display: block;
+    }
+  }
+
+  &--circle {
+    border-radius: 50%;
+
+    [type="checkbox"], [type="radio"] {
+  
+      & + span {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $accent;
+        transform: none;
+      }
+  
+      &:checked + span {
+        display: block;
+      }
     }
   }
 }
@@ -534,4 +535,12 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
-  
+
+
+.input-number {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+  border: 1px solid $blue;
+}
