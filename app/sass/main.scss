@@ -190,6 +190,17 @@
     margin: 0 0 28px 0;
     text-align: center;
     font-weight: bold;
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      width: 93%;
+      height: 8px;
+      background-color: $accent;
+      position: absolute;
+      z-index: -1;
+      top: 29px;
+    }
   }
 
   &__text {
@@ -382,6 +393,10 @@
 
 .s-sfera {
   background-image: url("../img/sfera-back.jpg");
+
+  .carousel-sfera {
+    display: none;
+  }
 
   .sfera {
     &__img {
@@ -630,6 +645,9 @@
 
     &__figure {
       display: block;
+      &--top {
+        display: none;
+      }
     }
 
     &__footer {

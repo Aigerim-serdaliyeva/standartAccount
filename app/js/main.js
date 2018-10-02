@@ -271,7 +271,20 @@ $(document).ready(function () {
   });
 
   $(".carousel-marka").owlCarousel({
-    loop: true,
+    loop: false,
+    dots: false,
+    nav: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false,},
+      480: { items: 2, mouseDrag: true, },
+    },
+  });
+
+  $(".carousel-sfera").owlCarousel({
+    loop: false,
     dots: false,
     nav: true,
     smartSpeed: 500,
