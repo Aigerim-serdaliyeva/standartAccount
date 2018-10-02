@@ -7,4 +7,4 @@ Allow: /*.png
 Allow: /js/*.js
 Allow: /img/*.jpg
 Allow: /img/*.png
-Host: http://.kz
+Host: http://buhstandart.kz
