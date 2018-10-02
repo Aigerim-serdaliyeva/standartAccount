@@ -733,6 +733,7 @@
       <div class="question" id="question-1">
         <div class="question__num">Вопрос <span>1</span> из 5</div>
         <div class="question__text">Какая у Вас форма предпринимательской деятельности?</div>
+        <input type="hidden" name="Вопрос1" value="Какая у Вас форма предпринимательской деятельности?">
         <div class="question__variants">
           <label class="label">
             <span class="checkbox">
@@ -758,36 +759,38 @@
           </label>
         </div>
         <div class="question__error"></div>
-        <a href="#" class="perehod" data-show="question-2" data-hide="question-1">Дальше <img src="./img/strelka.png"></a>
+        <a href="#" class="perehod" data-show="question-2" data-hide="question-1">Дальше</a>
       </div>
   
       <div class="question d-none" id="question-2">
         <div class="question__num">Вопрос <span>2</span> из 5</div>
         <div class="question__text">Укажите форму налогообложения</div>
-        <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ2" value="Упрощенная">
-            <span></span>          
-          </span>
-          <span>Упрощенная</span>
-        </label>
-
-        <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ2" value="Общая">
-            <span></span>          
-          </span>
-          <span>Общая</span>
-        </label>
-
-        <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ2" value="Специальная">
-            <span></span>          
-          </span>
-          <span>Специальная</span>
-        </label>
-        
+        <input type="hidden" name="Вопрос2" value="Укажите форму налогообложения">
+        <div class="question__variants">
+          <label class="label">
+            <span class="checkbox">
+              <input type="radio" name="Ответ2" value="Упрощенная">
+              <span></span>          
+            </span>
+            <span>Упрощенная</span>
+          </label>
+  
+          <label class="label">
+            <span class="checkbox">
+              <input type="radio" name="Ответ2" value="Общая">
+              <span></span>          
+            </span>
+            <span>Общая</span>
+          </label>
+  
+          <label class="label">
+            <span class="checkbox">
+              <input type="radio" name="Ответ2" value="Специальная">
+              <span></span>          
+            </span>
+            <span>Специальная</span>
+          </label>
+        </div>       
         <div class="question__error"></div>
         <a href="#" class="perehod" data-show="question-3" data-hide="question-2">Дальше</a>
       </div>      
@@ -795,38 +798,40 @@
       <div class="question d-none" id="question-3">
         <div class="question__num">Вопрос <span>3</span> из 5</div>
         <div class="question__text">Какой вид деятельности у Вашей компании?</div>
-        <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ3" value="Услуги">
-            <span></span>          
-          </span>
-          <span>Услуги</span>
-        </label>
-
-        <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ3" value="Торговля">
-            <span></span>          
-          </span>
-          <span>Торговля</span>
-        </label>
-
-        <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ3" value="Производство">
-            <span></span>          
-          </span>
-          <span>Производство</span>
-        </label>
-
-        <label class="label">
-          <span class="checkbox">
-            <input type="radio" name="Ответ3" value="Фермерское хозяйство">
-            <span></span>          
-          </span>
-          <span>Фермерское хозяйство</span>
-        </label>
-        
+        <input type="hidden" name="Вопрос3" value="Какой вид деятельности у Вашей компании?">
+        <div class="question__variants">
+          <label class="label">
+            <span class="checkbox">
+              <input type="radio" name="Ответ3" value="Услуги">
+              <span></span>          
+            </span>
+            <span>Услуги</span>
+          </label>
+  
+          <label class="label">
+            <span class="checkbox">
+              <input type="radio" name="Ответ3" value="Торговля">
+              <span></span>          
+            </span>
+            <span>Торговля</span>
+          </label>
+  
+          <label class="label">
+            <span class="checkbox">
+              <input type="radio" name="Ответ3" value="Производство">
+              <span></span>          
+            </span>
+            <span>Производство</span>
+          </label>
+  
+          <label class="label">
+            <span class="checkbox">
+              <input type="radio" name="Ответ3" value="Фермерское хозяйство">
+              <span></span>          
+            </span>
+            <span>Фермерское хозяйство</span>
+          </label>
+        </div>        
         <div class="question__error"></div>
         <a href="#" class="perehod" data-show="question-4" data-hide="question-3">Дальше</a>
       </div> 
@@ -834,22 +839,24 @@
       <div class="question d-none" id="question-4">
         <div class="question__num">Вопрос <span>4</span> из 5</div>
         <div class="question__text">Есть ли необходимость вести 1С?</div>
-        <label class="label">
-          <span class="checkbox checkbox--circle">
-            <input type="radio" name="Ответ4" value="Да">
-            <span></span>          
-          </span>
-          <span>Да</span>
-        </label>
-
-        <label class="label">
-          <span class="checkbox checkbox--circle">
-            <input type="radio" name="Ответ4" value="Нет">
-            <span></span>          
-          </span>
-          <span>Нет</span>
-        </label>
-
+        <input type="hidden" name="Вопрос4" value="Есть ли необходимость вести 1С?">
+        <div class="question__variants">
+          <label class="label">
+            <span class="checkbox checkbox--circle">
+              <input type="radio" name="Ответ4" value="Да">
+              <span></span>          
+            </span>
+            <span>Да</span>
+          </label>
+  
+          <label class="label">
+            <span class="checkbox checkbox--circle">
+              <input type="radio" name="Ответ4" value="Нет">
+              <span></span>          
+            </span>
+            <span>Нет</span>
+          </label>
+        </div>
         <div class="question__error"></div>
         <a href="#" class="perehod" data-show="question-5" data-hide="question-4">Дальше</a>
       </div> 
@@ -857,21 +864,24 @@
       <div class="question d-none" id="question-5">
         <div class="question__num">Вопрос <span>5</span> из 5</div>
         <div class="question__text">Введите числовые значения</div>
-        <label class="label">
-          <span>Количество операций в месяц</span>
-          <input type="number" class="input-number" name="Количество_операций" value="" required>
-        </label>
-
-        <label class="label">
-          <span>Количество сотрудников</span>
-          <input type="number" class="input-number" name="Количество_сотрудников" value="" required>
-        </label>
-
+        <input type="hidden" name="Вопрос5" value="Введите числовые значения">
+        <div class="question__variants">
+          <label class="label">
+            <span>Количество операций в месяц</span>
+            <input type="number" class="input-number" name="Количество_операций" value="" required>
+          </label>
+  
+          <label class="label">
+            <span>Количество сотрудников</span>
+            <input type="number" class="input-number" name="Количество_сотрудников" value="" required>
+          </label>
+        </div>
         <div class="question__error"></div>
         <a href="#" class="button button-perehod" data-show="question-last" data-hide="question-5">Рассчитать стоимость</a>
       </div> 
   
       <div class="question d-none" id="question-last">
+        <div class="question__text">Введите контактные данные для обратной связи</div>
         <div class="form form--vertical">
           <div class="form__content">
             <div class="input-div">
@@ -881,8 +891,12 @@
               <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
               <span class="error-message">Заполните поле</span>
             </div>
-            <button type="submit" class="button ajax-submit">Рассчитать стоимость</button>                  
           </div>
+          <div class="form__info">
+              * Ваши данные в безопасности <br>
+              и не будут переданы третьим лицам
+          </div>
+          <button type="submit" class="button ajax-submit">Рассчитать стоимость</button>
         </div>
       </div>
   

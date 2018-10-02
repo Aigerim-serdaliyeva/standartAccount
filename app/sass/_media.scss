@@ -376,6 +376,22 @@
       margin-bottom: 10px;
     }
   }
+
+  .question-modal {
+    .question {
+      min-height: 255px;
+
+      &:before {
+        left: -10px;
+        right: -10px;
+        background-size: auto;
+      }
+
+      &__text {
+        font-size: 15px;
+      }
+    }
+  }
 }
 
 

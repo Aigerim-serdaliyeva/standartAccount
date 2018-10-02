@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 11px 15px 11px 15px;   
 
   &.error {
-    border-color: red;
+    border-bottom-color: red !important;
     color: red;
 
     &+.error-message {
@@ -354,11 +354,16 @@ h1, h2, h3, h4, h5, h6 {
 
   &--vertical {
     max-width: 300px;
+    margin: 0 auto;
     
     .form {
       &__content {
         max-width: 260px;
         margin: 0 auto;    
+      }
+
+      &__info {
+        margin: 0 auto 20px;
       }
     }
 
@@ -524,8 +529,9 @@ h1, h2, h3, h4, h5, h6 {
   
   &__error {
     display: none;
-    margin-top: 10px;
+    margin-bottom: 10px;
     color: red;
+    font-weight: bold;
     text-align: center;
   }
 
