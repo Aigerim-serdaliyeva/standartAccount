@@ -542,13 +542,114 @@
     &__title {
       display: flex;
       justify-content: space-between;
-      font-size: 24px;
       font-weight: bold;
-      font-family: Gilroy, serif;
-      border-bottom: 2px solid $accent;
       div {
         padding: 15px 25px;
       }
+    }
+  }
+
+  .cprice {
+    &__header {
+      padding: 10px 15px;
+      margin-bottom: 30px;
+      display: flex;
+      font-size: 24px;
+      font-family: Gilroy, serif;
+      border-bottom: 2px solid $accent;
+
+      .cprice__cell1, .cprice__cell2 {
+        padding-left: 10px;
+        font-size: 24px;
+      }
+    }
+
+    &__body {
+      padding: 0 15px;
+    }
+
+    &__row {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    &__cell1 {
+      font-size: 16px;      
+      font-weight: 600;
+      flex-grow: 1;
+
+      .label:after {
+        position: relative;
+        top: -3px;
+        margin: 0 3px;
+        content: "";
+        align-self: flex-end;
+        display: block;
+        flex-grow: 1;
+        border-bottom: 2px dotted #000;
+      }
+    }
+
+    &__cell2 {
+      width: 125px;
+      flex-shrink: 0;
+      font-size: 18px;
+      font-family: Gilroy;
+    }
+  }
+
+  .selected {
+    overflow: hidden;
+    box-shadow: 0px 4px 11.76px 0.24px rgba(125, 125, 125, 0.7);
+
+    &__title {
+      font-family: Gilroy;
+      font-size: 18px;
+      padding: 25px 30px 0;
+    }
+
+    &__content {
+      margin: 25px;
+      height: 100px;
+      overflow: auto;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+      }
+
+      li {
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__figure {
+      display: block;
+    }
+
+    &__footer {
+      position: relative;
+      padding: 20px;
+      background-color: $blue;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 270px;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        background-color: $accent;
+      }
+    }
+
+    .form {
+      margin: 0 auto 0 0;
     }
   }
 }

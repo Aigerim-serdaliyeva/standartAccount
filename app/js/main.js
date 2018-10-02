@@ -225,14 +225,37 @@ $(document).ready(function () {
     $hide.addClass("d-none");
   });
 
-/* Этот код используется если Quiz будет открываться в модальнос окне. При закрытия модального окна Quiz вернется в первоначальный вид. (То есть будет виден первый вопрос и уберется все ошибки)*/
-$(document).on('closing', '.question-modal', function (e) {
-  $questionModal.find('.question')
-  	.removeClass('has-error')
-    .addClass('d-none')
-    .filter('#question-1')
-    .removeClass('d-none');
-});
+  var $inputs = $(".cprice .label input");
+  var $sfigure = $(".selected__figure");
+  var $scontent = $(".selected__content ul");
+  var $sinputs = $(".selected__inputs");
+
+  $inputs.change(function() {
+    var $checkeds = $inputs.filter(":checked");
+    $scontent.html("");
+    $sinputs.html("");
+
+    if ($checkeds.length) {
+      $sfigure.hide();
+
+      $checkeds.each(function() {
+        var $this = $(this);
+        $scontent.append('<li>' + $this.val() + '</li>');
+        $sinputs.append('<input type="hidden" name="Услуги[]" value="' + $this.val() +'"/>');
+      });
+    } else {
+      $sfigure.show();
+    }    
+  });
+
+  /* Этот код используется если Quiz будет открываться в модальнос окне. При закрытия модального окна Quiz вернется в первоначальный вид. (То есть будет виден первый вопрос и уберется все ошибки)*/
+  $(document).on('closing', '.question-modal', function (e) {
+    $questionModal.find('.question')
+      .removeClass('has-error')
+      .addClass('d-none')
+      .filter('#question-1')
+      .removeClass('d-none');
+  });
 
   $(".carousel-account").owlCarousel({
     loop: false,

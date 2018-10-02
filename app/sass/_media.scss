@@ -113,6 +113,12 @@
     }
   }
 
+  .s-service {
+    .cprice {
+      margin-bottom: 30px;
+    }
+  }
+
   .s-sfera {
     .sfera {
       margin-bottom: 25px;
@@ -123,10 +129,6 @@
     &__img {
       display: none;
     }
-  }
-
-  .s {
-    
   }
 }
 
@@ -324,6 +326,47 @@
 
       .td-bold {
         font-size: 14px;
+      }
+    }
+  }
+
+  .s-service {
+    .cprice {
+      &__header {
+        padding: 0;
+        .cprice__cell2 {
+          display: none;
+        }
+      }
+      &__body {
+        padding: 0;
+      }
+      &__row {
+        display: block;
+      }
+
+      &__cell1 {
+        .label {
+          margin-bottom: 0;
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      &__cell2 {
+        text-align: right;
+        width: 100%;
+      }
+    }
+
+    .selected {
+      &__title {
+        padding: 15px 15px 0;
+      }
+
+      &__content {
+        margin: 15px;
       }
     }
   }

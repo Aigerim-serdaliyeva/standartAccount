@@ -241,8 +241,8 @@ h1, h2, h3, h4, h5, h6 {
   color: $text_color;
   font-size: 14px;
   line-height: inherit;
-  border-bottom: 1px solid $blue !important;
   border: 1px solid transparent;
+  border-bottom: 1px solid $blue;
   background-color: transparent;
   font-family: $default_family, sans-serif;
   padding: 11px 15px 11px 15px;   
@@ -281,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .inverse & {
     color: #fff;
-    border-bottom-color: #fff !important;
+    border-bottom-color: #fff;
 
     &::-webkit-input-placeholder {
       color: #fff;
@@ -361,22 +361,25 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &--vertical {
-    max-width: 300px;
+    max-width: 230px;
     margin: 0 auto;
     
     .form {
       &__content {
-        max-width: 260px;
-        margin: 0 auto;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       &__info {
-        margin: 0 auto 20px;
+        text-align: center;
+        margin-bottom: 20px;
       }
     }
 
-    .button {
+    .input-div{
       width: 100%;
+      max-width: 196px;
     }
   }
 }
@@ -445,17 +448,22 @@ h1, h2, h3, h4, h5, h6 {
   color: $text_color;
   max-width: 80%;
 
+  &.inverse {
+    color: #fff;
+  }
+
   &-close {
     left: auto;
     right: 0;
     color: $text_color;
     z-index: 20;
-    &--white {
-      color: #fff;
-    }
 
     &:before {
       font-size: 35px;
+    }
+
+    .inverse & {
+      color: #fff !important;
     }
   }
 
@@ -463,15 +471,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 350px;
     padding: 45px 25px;
     background-color: $blue;
-    .form {
-      background-color: transparent;
-      &__info {
-        margin-bottom: 15px;
-      }
-      .button {
-        margin-bottom: 0;
-      }
-    }
   }
 }
 
@@ -484,6 +483,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   
   .checkbox {
+    flex-shrink: 0;
     margin-right: 10px;
   }
 }

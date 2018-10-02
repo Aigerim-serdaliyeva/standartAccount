@@ -576,14 +576,189 @@
         <h2 class="section-title">Также оказываем разовые бухгалтерские услуги:</h2>
         <div class="row">
           <div class="col-lg-7">
-            <div class="price">
-              <div class="price__title">
-                <div>Услуга</div>
-                <div>Цена</div>
+            <div class="cprice">
+              <div class="cprice__header">
+                <div class="cprice__cell1">Услуга</div>
+                <div class="cprice__cell2">Цена</div>
+              </div>
+              <div class="cprice__body">
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Сдача квартальных отчетов формы 200">
+                        <span></span>           
+                      </span>
+                      <span>Сдача квартальных отчетов формы 200</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 3 000 тг.
+                  </div>
+                </div>
+
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Сдача квартальных отчетов по форме 300">
+                        <span></span>           
+                      </span>
+                      <span> Сдача квартальных отчетов по форме 300</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 7 000 тг.
+                  </div>
+                </div>
+
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Сдача отчета по импорту формы 328 и 320">
+                        <span></span>           
+                      </span>
+                      <span>Сдача отчета по импорту формы 328 и 320</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 5 500 тг.
+                  </div>
+                </div>
+
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Отчет по ИП на УСН форма 910">
+                        <span></span>           
+                      </span>
+                      <span>Отчет по ИП на УСН форма 910</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 7 000 тг.
+                  </div>
+                </div>
+
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Годовой отчет форма 100 или 220">
+                        <span></span>           
+                      </span>
+                      <span>Годовой отчет форма 100 или 220</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 30 000 тг.
+                  </div>
+                </div>
+
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Нулевая отчетность">
+                        <span></span>           
+                      </span>
+                      <span>Нулевая отчетность</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 0 тг.
+                  </div>
+                </div>
+
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Статистические отчеты">
+                        <span></span>           
+                      </span>
+                      <span>Статистические отчеты</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 2 000 тг.
+                  </div>
+                </div>
+
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Другие виды отчетности">
+                        <span></span>           
+                      </span>
+                      <span>Другие виды отчетности</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 2 000 тг.
+                  </div>
+                </div>
+
+                <div class="cprice__row">
+                  <div class="cprice__cell1">
+                    <label class="label">
+                      <span class="checkbox">
+                        <input type="checkbox" value="Восстановление бухгалтерского и налогового учета">
+                        <span></span>           
+                      </span>
+                      <span>Восстановление бухгалтерского и налогового учета</span>
+                    </label>
+                  </div>
+                  <div class="cprice__cell2">
+                      от 25 000 тг.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5"></div>
+          <div class="col-lg-5">
+            <div class="selected">
+              <div class="selected__title">Выбранные услуги:</div>
+              <div class="selected__content">
+                <img src="./img/figure.png" alt="" class="selected__figure">
+                <ul></ul>
+              </div>
+              <div class="selected__footer">
+                <div class="form form--vertical inverse">
+                  <form action="/mail.php" method="post">
+                    <div class="form__content">
+                      <input type="hidden" name="info" value="Заказать услуги">
+                      <div class="selected__inputs"></div>
+                      <div class="input-div">
+                        <input type="text" class="input" name="name" placeholder="Введите имя *" required>
+                        <span class="error-message">Заполните это поле</span>
+                      </div>
+            
+                      <div class="input-div">
+                        <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required>
+                        <span class="error-message">Заполните это поле</span>
+                      </div>
+
+                      <div class="input-div">
+                        <input type="email" class="input" name="email" placeholder="Введите e-mail *" required>
+                        <span class="error-message">Заполните это поле</span>
+                      </div>
+
+                      <div class="form__info">
+                        * Ваши данные в безопасности <br>
+                        и не будут переданы третьим лицам
+                      </div>
+            
+                      <button class="button ajax-submit" type="submit" id="zakazat_uzlugi">Заказать услуги</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -674,17 +849,17 @@
     </footer>
   </div>
 
-  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+  <div class="remodal remodal--small inverse" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
 
-    <div class="form__title inverse">Оставьте заявку, <br>
+    <div class="form__title">Оставьте заявку, <br>
       и мы проконсультируем Вас <br>
       по интересующим вопросам!</div>
 
-    <div class="form form--vertical inverse">
+    <div class="form form--vertical">
       <form action="/mail.php" method="post">
         <div class="form__content">
-          <input type="hidden" name="info" value="Обратный звонок">
+          <input type="hidden" name="info" value="Заказать консультацию">
 
           <div class="input-div">
             <input type="text" class="input" name="name" placeholder="Введите имя *" required>
@@ -695,8 +870,10 @@
             <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required>
             <span class="error-message">Заполните это поле</span>
           </div>
-          <div class="form__info">* Ваши данные в безопасности
-            и не будут переданы третьим лицам</div>
+          <div class="form__info">
+            * Ваши данные в безопасности <br>
+            и не будут переданы третьим лицам
+          </div>
 
           <button class="button ajax-submit" type="submit" id="zakazat_konsultasiu">Заказать консультацию</button>
         </div>
@@ -887,18 +1064,19 @@
         <div class="form form--vertical">
           <div class="form__content">
             <div class="input-div">
-                <input type="text" class="input" name="name" placeholder="Введите имя">
-            </div>
+                <input type="text" class="input" name="name" placeholder="Введите имя" required>
+                <span class="error-message">Заполните поле</span>
+              </div>
             <div class="input-div">
               <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
               <span class="error-message">Заполните поле</span>
             </div>
-          </div>
-          <div class="form__info">
-              * Ваши данные в безопасности <br>
-              и не будут переданы третьим лицам
-          </div>
-          <button type="submit" class="button ajax-submit">Рассчитать стоимость</button>
+            <div class="form__info">
+                * Ваши данные в безопасности <br>
+                и не будут переданы третьим лицам
+            </div>
+            <button type="submit" class="button ajax-submit">Рассчитать стоимость</button>
+          </div>          
         </div>
       </div>
   
