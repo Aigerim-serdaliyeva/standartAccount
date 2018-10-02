@@ -390,6 +390,10 @@
         margin-bottom: 20px;
       }
     }
+
+    & > ymaps {
+      height: 300px !important;
+    }
   }
 
   .s {
