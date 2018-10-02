@@ -590,17 +590,16 @@
 
     <section class="section s-question">
       <div class="container">
-        <h2 class="section-title">
+        <div class="section-title">
           У вас есть вопросы?
-        </h2>
+        </div>
         <div class="s-question__text">Напишите свой вопрос здесь и получите бесплатную консультацию
           от нашего специалиста прямо сейчас!</div>
 
           <div class="form form--vopros">
             <form action="/mail.php" method="post">
               <div class="form__content">
-                <input type="hidden" name="info" value="Напишите свой вопрос здесь и получите бесплатную консультацию
-                от нашего специалиста прямо сейчас">
+                <input type="hidden" name="info" value="Напишите свой вопрос здесь и получите бесплатную консультацию от нашего специалиста прямо сейчас">
                 
                 <div class="form__input">
                   <div class="input-div">
@@ -613,7 +612,10 @@
                   </div>
                 </div>
                 <div class="form__info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
-                <textarea placeholder="Введите текст вопроса *" class="textarea"></textarea>
+                <div class="input-div">
+                    <textarea placeholder="Введите текст вопроса *" class="textarea" required></textarea>
+                    <span class="error-message">Заполните это поле</span>
+                </div>
                 <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button> 
               
             </div>
