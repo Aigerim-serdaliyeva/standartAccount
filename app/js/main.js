@@ -164,12 +164,7 @@ $(document).ready(function () {
     var val = +$(this).val() + 1;
     var $parent = $(this).closest('.offer');
     $parent.find("tbody td").removeClass("active").filter(':nth-child(' + val +')').addClass('active');
-  });
-
-  $(".s-compare__select select").change(function() {
-    var val = +$(this).val() + 1;
-    var $parent = $(this).closest('.s-compare');
-    $parent.find("tbody td").removeClass("active").filter(':nth-child(' + val +')').addClass('active');
+    $parent.find(".offer__document").removeClass("active").filter('[data-id="' + (val - 1) +'"]').addClass('active');
   });
 
   var $questionModal = $(".question-modal");
@@ -279,7 +274,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false,},
-      480: { items: 2, mouseDrag: true, },
+      480: { items: 2, mouseDrag: false, },
     },
   });
 

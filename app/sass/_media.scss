@@ -284,6 +284,13 @@
           }
         }
       }
+
+      &__document {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -310,6 +317,9 @@
     .form {
       margin-left: -15px;
       margin-right: -15px;
+    }
+    &__title {
+      font-size: 17px;
     }
     &__text {
       display: none;
@@ -392,25 +402,11 @@
   }
 
   .s-compare {
-
-    thead td {
-      display: none;
-    }
-
-    &__select {
-      display: table-cell !important;
-    }
-
-    tbody {
-      td {
-        display: none;
-        &.active {
-          display: table-cell;
-        }
-      }
-    }
-
     table {
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+
       th, td {
         font-size: 14px;
         padding: 5px 0 5px 5px;
@@ -426,15 +422,20 @@
     .cprice {
       &__header {
         padding: 0;
-        .cprice__cell2 {
-          display: none;
-        }
       }
       &__body {
         padding: 0;
-      }
-      &__row {
-        display: block;
+
+        .cprice__cell1 {
+          font-size: 14px;
+          font-weight: normal;
+        }
+
+        .cprice__cell2 {
+          font-family: $default_family;
+          font-size: 14px;
+          font-weight: 600;
+        }
       }
 
       &__cell1 {
@@ -448,7 +449,7 @@
 
       &__cell2 {
         text-align: right;
-        width: 100%;
+        width: 90px;
       }
     }
 
