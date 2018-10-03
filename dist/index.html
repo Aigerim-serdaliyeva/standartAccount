@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=10" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=11" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -88,9 +88,11 @@
       </div>
     </header>
 
-    <section class="section s-main inverse" id="main">
+    <section class="section s-main inverse order-1" id="main">
       <div class="container">
-        <h1 class="s-main__title">Профессиональное бухгалтерское обслуживание ИП и ТОО</h1>
+        <h1 class="s-main__title">
+          Профессиональное бухгалтерское <span class="word">обслуживание ИП и ТОО</span>
+        </h1>
         <div class="s-main__text">Доверьте бухгалтерское сопровождение компании "Стандарт_Account" 
             и получите возможность заниматься своим бизнесом без тревог</div>
         <ul>
@@ -102,7 +104,7 @@
               документов  </li>
         </ul>
 
-        <div class="form form--horizontal wow slideInUp">
+        <div class="form form--horizontal wow zoomIn">
           <form action="/mail.php" method="post">
             <div class="form__title">Оставьте заявку на бесплатную консультацию <br>
                 и получите скидку в 50% на первый месяц обслуживания!</div>
@@ -138,12 +140,12 @@
       </div>
     </section>
 
-    <section class="section s-account">
+    <section class="section s-account order-2">
       <div class="container">
         <h2 class="section-title">Причины обратиться к "Стандарт_Account"</h2>
         <div class="row s-account__content">
           <div class="col-lg-4 col-6 d-flex">
-            <div class="account">
+            <div class="account wow slideInUp">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">1</div>
               <div class="account__text">Позволяем сэкономить 
@@ -151,7 +153,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-6 d-flex">
-            <div class="account">
+            <div class="account wow slideInUp">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">2</div>
               <div class="account__text">Находим <span>законные способы снижения налоговой нагрузки,</span> 
@@ -159,21 +161,21 @@
             </div>
           </div>
           <div class="col-lg-4 col-6 d-flex">
-            <div class="account">
+            <div class="account wow slideInUp">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">3</div>
               <div class="account__text">Мгновенно учитываем любые изменения и предусматриваем непрерывное <span>обучение сотрудников</span> (Вам <span>не придется платить от 40 000 тенге</span> в год за обучение своих сотрудников)</div>
             </div>
           </div>
           <div class="col-lg-4 col-6 d-flex">
-            <div class="account">
+            <div class="account wow slideInUp">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">4</div>
               <div class="account__text">Гарантируем <span>корректность и своевременность</span> в работе с бухгалтерскими и налоговыми отчетами, благодаря чему Вы сможете со спокойствием <span>уделять время другим важным делам</span></div>
             </div>
           </div>
           <div class="col-lg-4 col-6 d-flex">
-            <div class="account">
+            <div class="account wow slideInUp">
               <div class="account__img"><img src="./img/ellips.png" alt=""></div>
               <div class="account__num">5</div>
               <div class="account__text">Восстанавливаем бухгалтерский 
@@ -213,7 +215,7 @@
               с законодательством РК в кратчайшие сроки</span></div>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center wow fadeIn">
           <div class="col-md-7">
             <div class="s-quiz__title">Ответьте на 5 вопросов и получите рассчет стоимости 
                 бухгалтерского обслуживания Вашей компании</div>
@@ -225,50 +227,49 @@
       </div>
     </section>
 
-    <section class="section s-trust">
+    <section class="section s-trust order-3">
       <div class="container">
         <h2 class="section-title">Свою бухгалтерскую и налоговую отчетность нам доверяют:</h2>
         <div class="owl-carousel carousel-marka">
           <div class="marka"><img src="./img/farm.png" alt=""></div>
           <div class="marka"><img src="./img/persy.png" alt=""></div>
-          <div class="marka"><img src="./img/persy.png" alt=""></div>
         </div>
       </div>
     </section>
 
-    <section class="section s-reviews" id="review">
+    <section class="section s-reviews order-4" id="review">
       <div class="container">
         <h2 class="section-title">Отзывы клиентов</h2>
         <div class="owl-carousel carousel-reviews">
-          <div class="review">
+          <div class="review wow ZoomIn">
             <div class="review__img"><img src="./img/review-1.jpg" alt=""></div>
             <div class="review__name">Узденова  Белла</div>
             <div class="review__summary">Директор стоматологии RASUL DENT</div>
             <div class="review__text">Наше знакомство с компанией Стандарт_account началось с восстановления учета  и отчетности в 2010 году. С момента знакомства и по сегодняшний день мы возлагаем ведение бухгалтерии на компанию Стандарт_account. Спасибо коллективу компании Стандарт_account, за оказанную поддержку и проделанную работу. Мы рады иметь таких партнеров.  </div>
           </div>
 
-          <div class="review">
+          <div class="review wow ZoomIn">
             <div class="review__img"><img src="./img/review-2.jpg" alt=""></div>
             <div class="review__name">Лисютина Надежда Тимофеевна</div>
             <div class="review__summary">Директор Ателье Надежда</div>
             <div class="review__text">Пытались сами вести бухгалтерский учет и сдавать отчетность в уполномоченные органы, уходило масса времени.  Партнеры порекомендовали обратиться в компанию Стандарт_account. Сотрудничаем с компанией Стандарт_account на протяжении 5 лет. Очень довольны. Мы занимаемся развитием своего бизнеса, а компания Стандарт_account, занимается нашими налогами и отчетами. Спасибо Компании Стандарт_account за эффективное и плодотворное сотрудничество. </div>
           </div>
 
-          <div class="review">
+          <div class="review wow ZoomIn">
             <div class="review__img"><img src="./img/review-3.jpg" alt=""></div>
             <div class="review__name">Корниевский Святослав</div>
             <div class="review__summary">Директор СК Фарм, профессиональные препараты для бассейнов</div>
             <div class="review__text">Организовав компанию в марте 2015 года, перед нами стал вопрос: как вести бухгалтерию и где взять квалифицированного бухгалтера? Партнеры порекомендовали нам обратиться в Компанию Стандарт_account, сотрудники компании грамотные, квалифицированные и отзывчивые люди. Со дня основания мы сотрудничаем  с Компанией Стандарт_account и ни разу об этом не пожалели. Если у Вас возникли проблемы по ведению бухгалтерского и налогового учета, обращайтесь в компанию Стандарт_account, они обязательно Вам помогут.</div>
           </div>
 
-          <div class="review">
+          <div class="review wow ZoomIn">
             <div class="review__img"><img src="./img/review-4.jpg" alt=""></div>
             <div class="review__name">  Насыров Шухрат</div>
             <div class="review__summary">Администратор Барбершоп Перцы</div>
             <div class="review__text">При открытии барбершопа, мы не знали, как правильно оформить свою деятельность и как зарегистрироваться в уполномоченных органах, какую систему налогообложения  выбрать. Обратились в компанию Стандарт_account, сотрудники компании нам все разъяснили и помогли с нашими первыми отчетами и оплатами налогов. Заключили с компанией Стандарт_account договор на бухгалтерское обслуживание. Работаем! Очень довольны!</div>
           </div>
 
-          <div class="review">
+          <div class="review wow ZoomIn">
             <div class="review__img"><img src="./img/review-5.jpg" alt=""></div>
             <div class="review__name"> Ismail Gasanov</div>
             <div class="review__summary">ТЦ НУР-АЛИ</div>
@@ -278,10 +279,10 @@
       </div>
     </section>
 
-    <section class="section s-sfera">
+    <section class="section s-sfera order-5">
       <div class="container">
         <h2 class="section-title">Сферы, с которыми мы работаем:</h2>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center s-sfera__content wow fadeIn">
           <div class="col-lg-2 col-md-3 col-6">
             <div class="sfera">
               <div class="sfera__img"><img src="./img/sfera-1.png" alt=""></div>
@@ -325,15 +326,47 @@
             </div>
           </div>
         </div>
+        <div class="owl-carousel carousel-sfera">
+          <div class="sfera">
+            <div class="sfera__img"><img src="./img/sfera-1.png" alt=""></div>
+            <div class="sfera__title">Розничная <br>
+                торговля</div>
+          </div>
+          <div class="sfera">
+            <div class="sfera__img"><img src="./img/sfera-2.png" alt=""></div>
+            <div class="sfera__title">Услуги <br>
+                населению</div>
+          </div>
+          <div class="sfera">
+            <div class="sfera__img"><img src="./img/sfera-3.png" alt=""></div>
+            <div class="sfera__title">Строительство <br>
+                и ремонт</div>
+          </div>
+          <div class="sfera">
+            <div class="sfera__img"><img src="./img/sfera-4.png" alt=""></div>
+            <div class="sfera__title">Оптовая <br>
+                торговля</div>
+          </div>
+          <div class="sfera">
+            <div class="sfera__img"><img src="./img/sfera-5.png" alt=""></div>
+            <div class="sfera__title">Услуги <br>
+                для бизнеса</div>
+          </div>
+          <div class="sfera">
+            <div class="sfera__img"><img src="./img/sfera-6.png" alt=""></div>
+            <div class="sfera__title">Другие <br>
+                сферы</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section s-offers" id="offer">
+    <section class="section s-offers order-6" id="offer">
       <div class="container">
         <h2 class="section-title">Пакетные предложения "Стандарт_Account"</h2>
         <div class="row">
           <div class="col-xl-6">
-            <div class="offer">
+            <div class="offer wow slideInUp">
               <div class="ellips"><img src="./img/ellips-offer.png" alt=""></div>
               <div class="offer__title">Для ИП</div>
               <table style="width:100%">
@@ -392,7 +425,7 @@
                 <div class="offer__value__title">* Стоимость указана при минимальных оборотах.
                   Окончательная стоимость рассчитывается после
                   уточнения деталей</div>
-                <div class="offer__document">
+                <div class="offer__document" data-id="3">
                   <img src="./img/ellips-blue.png" alt="">
                   <div class="offer__document__title">
                     + Создание <br>
@@ -404,7 +437,7 @@
             </div>
           </div>
           <div class="col-xl-6">
-            <div class="offer">
+            <div class="offer wow slideInUp">
               <div class="ellips"><img src="./img/ellips-offer.png" alt=""></div>
               <div class="offer__title">Для ТОО</div>
               <table style="width:100%">
@@ -420,9 +453,9 @@
                       /месяц</td>
                     <td class="offer__select">
                       <select>
-                        <option value="1">10 000тг / полугодие</option>
-                        <option value="2">от 18 000тг / месяц</option>
-                        <option value="3">от 28 000тг / месяц</option>
+                        <option value="1">25 000тг / полугодие</option>
+                        <option value="2">от 28 000тг / месяц</option>
+                        <option value="3">от 30 000тг / месяц</option>
                       </select>
                     </td>
                   </tr>
@@ -464,7 +497,7 @@
                 <div class="offer__value__title">* Стоимость указана при минимальных оборотах.
                   Окончательная стоимость рассчитывается после
                   уточнения деталей</div>
-                <div class="offer__document">
+                <div class="offer__document" data-id="3">
                   <img src="./img/ellips-blue.png" alt="">
                   <div class="offer__document__title">
                     + Создание <br>
@@ -479,7 +512,7 @@
       </div>
     </section>
 
-    <section class="s-quiz">
+    <section class="s-quiz wow fadeIn order-7">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7">
@@ -493,85 +526,136 @@
       </div>
     </section>
 
-    <section class="section s-compare">
+    <section class="section s-compare order-9 order-sm-8">
       <div class="container">
-        <h2 class="section-title">Расходы на оплату труда штатного бухгалтера <br>
-            в сравнении с услугами  "Стандарт_Account"  </h2>
-            <table style="width:100%">
-              <thead>
-                <tr>
-                  <th>Расходы</th>
-                  <td class="td-bold">Штатный бухгалтер</td>
-                  <td class="accent td-bold">Услуги компании "Стандарт_Account"</td>
-                  <td class="s-compare__select">
-                    <select>
-                      <option value="1">Штатный бухгалтер</option>
-                      <option value="2">Услуги компании "Стандарт_Account"</option>
-                    </select>
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Аренда дополнительного помещения</th>
-                  <td class="active">от 20 000 тенге/месяц</td>
-                  <td>0 тг.</td>
-                </tr>
-  
-                <tr>
-                  <th>Канцелярские товары</th>
-                  <td class="active">от 3 000 тенге/месяц</td>
-                  <td>0 тг.</td>
-                </tr>
-  
-                <tr>
-                  <th>Услуги связи</th>
-                  <td class="active">от 3 000 тенге/месяц</td>
-                  <td>0 тг.</td>
-                </tr>
-  
-                <tr>
-                  <th>З/п бухгалтера</th>
-                  <td class="active">от 150 000 тенге/месяц</td>
-                  <td>0 тг.</td>
-                </tr>
-  
-                <tr>
-                  <th>Оплата за выполненный объем работы</th>
-                  <td class="active">от 0 тг./месяц</td>
-                  <td>от 10 000 тг./полугодие</td>
-                </tr>
-  
-                <tr class="itogo">
-                  <th>Итого</th>
-                  <td class="td-bold red active">от 176 000 тенге в месяц</td>
-                  <td class="td-bold green">от 10 000 тенге в месяц</td>
-                </tr>
-  
-                <tr class="tr-border">
-                  <th></th>
-                  <td class="active">+</td>
-                  <td>+</td>
-                </tr>
-  
-                <tr>
-                  <th>Обучение</th>
-                  <td class="active">от 40 000 тенге/ежегодно</td>
-                  <td>0 тг.</td>
-                </tr>
-  
-                <tr>
-                  <th>Покупка оборудования</th>
-                  <td class="active">от 150 000 тенге/раз в 5 лет</td>
-                  <td>0 тг.</td>
-                </tr>  
-              </tbody>
+        <h2 class="section-title">
+          Расходы на оплату труда штатного бухгалтера <br> 
+          в сравнении с услугами  "Стандарт_Account"  
+        </h2>
+        <table style="width:100%">
+          <thead>
+            <tr>
+              <th>Расходы</th>
+              <td class="td-bold">Штатный бухгалтер</td>
+              <td class="accent td-bold d-none d-sm-table-cell">Услуги компании "Стандарт_Account"</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Аренда дополнительного помещения</th>
+              <td>от 20 000 тенге/месяц</td>
+              <td class="d-none d-sm-table-cell">0 тг.</td>
+            </tr>
 
-            </table> 
+            <tr>
+              <th>Канцелярские товары</th>
+              <td>от 3 000 тенге/месяц</td>
+              <td class="d-none d-sm-table-cell">0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>Услуги связи</th>
+              <td>от 3 000 тенге/месяц</td>
+              <td class="d-none d-sm-table-cell">0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>З/п бухгалтера</th>
+              <td>от 150 000 тенге/месяц</td>
+              <td class="d-none d-sm-table-cell">0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>Оплата за выполненный объем работы</th>
+              <td>от 0 тг./месяц</td>
+              <td class="d-none d-sm-table-cell">от 10 000 тг./полугодие</td>
+            </tr>
+
+            <tr class="itogo">
+              <th>Итого</th>
+              <td class="td-bold red">от 176 000 тенге в месяц</td>
+              <td class="td-bold green d-none d-sm-table-cell">от 10 000 тенге в месяц</td>
+            </tr>
+
+            <tr class="tr-border">
+              <th></th>
+              <td>+</td>
+              <td class="d-none d-sm-table-cell">+</td>
+            </tr>
+
+            <tr>
+              <th>Обучение</th>
+              <td>от 40 000 тенге/ежегодно</td>
+              <td class="d-none d-sm-table-cell">0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>Покупка оборудования</th>
+              <td>от 150 000 тенге/раз в 5 лет</td>
+              <td class="d-none d-sm-table-cell">0 тг.</td>
+            </tr>  
+          </tbody>
+
+        </table>
+        <table style="width:100%" class="d-table d-sm-none">
+          <thead>
+            <tr>
+              <th>Расходы</th>
+              <td class="accent td-bold">Услуги компании "Стандарт_Account"</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Аренда дополнительного помещения</th>
+              <td>0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>Канцелярские товары</th>
+              <td>0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>Услуги связи</th>
+              <td>0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>З/п бухгалтера</th>
+              <td>0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>Оплата за выполненный объем работы</th>
+              <td>от 10 000 тг./полугодие</td>
+            </tr>
+
+            <tr class="itogo">
+              <th>Итого</th>
+              <td class="td-bold green">от 10 000 тенге в месяц</td>
+            </tr>
+
+            <tr class="tr-border">
+              <th></th>
+              <td>+</td>
+            </tr>
+
+            <tr>
+              <th>Обучение</th>
+              <td>0 тг.</td>
+            </tr>
+
+            <tr>
+              <th>Покупка оборудования</th>
+              <td>0 тг.</td>
+            </tr>  
+          </tbody>
+
+        </table> 
       </div>
     </section>
 
-    <section class="section s-service" id="service">
+    <section class="section s-service order-8 order-sm-9" id="service">
       <div class="container">
         <h2 class="section-title">Также оказываем разовые бухгалтерские услуги:</h2>
         <div class="row">
@@ -723,7 +807,8 @@
             <div class="selected">
               <div class="selected__title">Выбранные услуги:</div>
               <div class="selected__content">
-                <img src="./img/figure.png" alt="" class="selected__figure">
+                <img src="./img/figure.png" alt="" class="selected__figure selected__figure--left">
+                <img src="./img/figure-top.png" alt="" class="selected__figure selected__figure--top">
                 <ul></ul>
               </div>
               <div class="selected__footer">
@@ -763,7 +848,7 @@
       </div>
     </section>
 
-    <section class="section s-question">
+    <section class="section s-question order-10">
       <div class="container">
         <div class="section-title">
           У вас есть вопросы?
@@ -800,7 +885,7 @@
       </div>
     </section>
 
-    <section class="s-contact" id="contact">
+    <section class="s-contact order-11" id="contact">
       <div class="container">
         <div class="contact inverse">
           <div class="contact__phone">
@@ -817,7 +902,7 @@
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae9b48baebad09f764ead52a4395d89317a99bea5f2822c3f6366a4dce7901517&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
     </section>
 
-    <footer class="footer inverse">
+    <footer class="footer inverse order-12">
       <div class="container">
         <div class="footer__content">
           <a href="/" class="logo">
@@ -930,7 +1015,7 @@
           </label>
           <label class="label">
             <span class="checkbox">
-              <input type="radio" name="Ответ3" value="Другое" class="drugoe">
+              <input type="radio" name="Ответ1" value="Другое" class="drugoe">
               <span></span>
             </span>
             <span>Другое</span>
@@ -1047,12 +1132,12 @@
         <div class="question__variants">
           <label class="label">
             <span>Количество операций в месяц</span>
-            <input type="number" class="input-number" name="Количество_операций" value="" required>
+            <input type="number" class="input-number" name="Количество_операций" value="">
           </label>
   
           <label class="label">
             <span>Количество сотрудников</span>
-            <input type="number" class="input-number" name="Количество_сотрудников" value="" required>
+            <input type="number" class="input-number" name="Количество_сотрудников" value="">
           </label>
         </div>
         <div class="question__error"></div>
