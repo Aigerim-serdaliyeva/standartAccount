@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=11" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=13" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -106,11 +106,11 @@
 
         <div class="form form--horizontal wow zoomIn">
           <form action="/mail.php" method="post">
+            <input type="hidden" name="info" value="Заявка на бесплатную консультацию и скидку на первый месяц обслуживания!">
             <div class="form__title">Оставьте заявку на бесплатную консультацию <br>
                 и получите скидку в 50% на первый месяц обслуживания!</div>
             <div class="form__content">
 
-              <input type="hidden" name="info" value="Оставьте заявку на бесплатную консультацию и получите скидку в 50% на первый месяц обслуживания!">
 
               <div class="input-div">
                 <input type="text" class="input" name="name" placeholder="Введите имя *" required>
@@ -888,14 +888,20 @@
     <section class="s-contact order-11" id="contact">
       <div class="container">
         <div class="contact inverse">
-          <div class="contact__phone">
+          <div class="contact__item">
+            <img src="./img/call.png" alt="">
             <a href="tel:+77273276025" class="text-phone" id="phone_number">+7 (727) 327-60-25</a> <br>
             <a href="tel:+77778299228" class="text-phone" id="phone_number">+7 777 829-92-28</a> <br>
             <a href="tel:+77025300145" class="text-phone" id="phone_number">+7 702 530-01-45</a>
           </div>
-          <div class="contact__address">
+          <div class="contact__item">
+            <img src="./img/address.png" alt="">
             г.Алматы, <br>
             ул. Б.Майлина, 84
+          </div>
+          <div class="contact__item">
+            <img src="./img/message.png" alt="">
+            <a href="mailto:info@buhstandart.kz">info@buhstandart.kz</a>
           </div>
         </div>
       </div>
