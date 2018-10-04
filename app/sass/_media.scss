@@ -55,6 +55,15 @@
       margin-bottom: 25px;
     }
   }
+
+  .s-contact {
+    .contact {
+      justify-content: space-between;
+      &__item {
+        margin-right: 0px;
+      }
+    }
+  }
   
 }
 
@@ -293,6 +302,16 @@
       }
     }
   }
+
+  .s-contact {
+    .contact {
+      flex-direction: column;
+      &__item {
+        width: 220px;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 // ≥576px
@@ -477,13 +496,6 @@
   }
 
   .s-contact {
-    .contact {
-      flex-direction: column;
-      &__phone {
-        margin-bottom: 20px;
-      }
-    }
-
     & > ymaps {
       height: 300px !important;
     }
