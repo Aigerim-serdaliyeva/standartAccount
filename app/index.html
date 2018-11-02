@@ -33,7 +33,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="page-wrapper">
 
     <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
-    <a href="tel:+77778299228" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+
+    <div class="callback__wrapper">
+      <div class="callback__items">
+        <div class="callback__item">
+          <a target="_parent" href="https://api.whatsapp.com/send?phone=77778299228" id="whatsapp">
+            <i class="callback__icon callback__whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <div class="callback__item">
+          <a href="tel:+77778299228" id="callMe" class="call-me">
+            <i class="callback__icon callback__phone"></i>  Позвонить
+          </a>
+        </div>
+      </div>
+    </div>
 
     <header class="header inverse">
       <div class="container">
@@ -100,6 +114,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Профессиональное бухгалтерское <span class="word">обслуживание ИП и ТОО</span>
         </h1>
         <div class="s-main__text">Сэкономьте от 100 000 тенге в месяц на оплате труда штатного бухгалтера, заказав услуги у "Стандарт_Account"</div>
+        
         <ul>
           <li>Своевременная сдача <br>
               налоговых отчетов</li>
@@ -123,7 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
 
               <div class="input-div">
-                <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required="">
+                <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required="" minlength="10">
                 <span class="error-message">Заполните это поле</span>
               </div>
 
@@ -829,7 +844,7 @@ white"><p class="MsoNormal"><o:p></o:p></p><p class="MsoNormal"><span style="fon
                       </div>
             
                       <div class="input-div">
-                        <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required>
+                        <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required minlength="10">
                         <span class="error-message">Заполните это поле</span>
                       </div>
 
@@ -873,7 +888,7 @@ white"><p class="MsoNormal"><o:p></o:p></p><p class="MsoNormal"><span style="fon
                   </div>
     
                   <div class="input-div">
-                    <input type="tel" class="input input--blue" name="phone" placeholder="Введите телефон *" required>
+                    <input type="tel" class="input input--blue" name="phone" placeholder="Введите телефон *" required minlength="10">
                     <span class="error-message">Заполните это поле</span>
                   </div>
                 </div>
@@ -964,7 +979,7 @@ white"><p class="MsoNormal"><o:p></o:p></p><p class="MsoNormal"><span style="fon
           </div>
 
           <div class="input-div">
-            <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required>
+            <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required minlength="10">
             <span class="error-message">Заполните это поле</span>
           </div>
           <div class="form__info">
@@ -1165,7 +1180,7 @@ white"><p class="MsoNormal"><o:p></o:p></p><p class="MsoNormal"><span style="fon
                 <span class="error-message">Заполните поле</span>
               </div>
             <div class="input-div">
-              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required minlength="10">
               <span class="error-message">Заполните поле</span>
             </div>
             <div class="form__info">
