@@ -175,6 +175,7 @@
 
 .s-main {
   padding-top: 150px;
+  padding-bottom: 200px;
   background-color: $blue;
   position: relative;
 
@@ -239,22 +240,27 @@
     }
   }
 
-  .form {
-    background-color: #0559a5;
-    padding: 25px 90px 5px;
-    margin-bottom: 125px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: #0559a5;
-      right: 100%;
-      left: -1000px;
-      top: 0;
-      bottom: 0;
-    }
-
+  .s-quiz__title {
+    margin-bottom: 15px;
+    margin-top: 80px;
   }
+
+  // .form {
+  //   background-color: #0559a5;
+  //   padding: 25px 90px 5px;
+  //   margin-bottom: 125px;
+
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     background-color: #0559a5;
+  //     right: 100%;
+  //     left: -1000px;
+  //     top: 0;
+  //     bottom: 0;
+  //   }
+
+  // }
 
   &:after {
     content: "";
